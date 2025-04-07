@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>[PAGE TITLE]</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Marcos' Portfolio</h1>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="blog.html">Articles</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>My Projects</h2>
+      <div class="project">
+        <h3>Mini Puzzle RPG</h3>
+        <p>A fun pixel game with quests and custom characters built in Godot.</p>
+      </div>
+      <div class="project">
+        <h3>Quiz Generator Bot</h3>
+        <p>A Python-based tool that creates tech trivia quizzes and posts them on TikTok automatically.</p>
+      </div>
+    </section>
+  </main>
+  
+
+  <footer>
+    <p>&copy; 2025 Marcos. Built with HTML, CSS, and PHP.</p>
+  </footer>
+
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

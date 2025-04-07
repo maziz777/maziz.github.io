@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marcos' Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Welcome to my World</h1>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Title -->
+    <section id="home">
+        <!-- Dark Mode Toggle Button -->
+<button class="theme-toggle" id="themeToggle" title="Toggle dark mode">
+    <i class="fas fa-moon">Dark Mode</i>
+  </button>
+      <!-- Cover Image -->
+      <div class="cover-image">
+        <img src="assets/cover.png" alt="Welcome to Marcos' Portfolio Cover" />
+      </div>
+      <h2 style="text-align: center; font-size: 2.5rem; color: #6a4dad; margin-bottom: 2rem;">Welcome to Marcos' Portfolio</h2>
+
+      <!-- Carousel Section -->
+      <div class="carousel-wrapper">
+        <div class="carousel">
+          <div class="carousel-track-container">
+            <ul class="carousel-track">
+              <li class="carousel-slide"><h3>🎮 Side Scroller Game</h3><p>A preview of a simple side scroller with character quests and retro-style mechanics.</p></li>
+              <li class="carousel-slide"><h3>🤖 Quiz Generator Bot</h3><p>An AI-powered bot created on Make.com that auto-posts tech quizzes to TikTok.</p></li>
+              <li class="carousel-slide"><h3>💡 Quote of the Day</h3><p>"Learning by doing is the best way to grow in tech."</p></li>
+              <li class="carousel-slide"><h3>🔧 Raspberry Pi Project</h3><p>A hands-on network monitoring setup built with a Raspberry Pi and open-source tools.</p></li>
+            </ul>
+          </div>
+          <button class="carousel-button left">&#10094;</button>
+          <button class="carousel-button right">&#10095;</button>
+        </div>
+      </div>
+
+      <!-- Articles Section -->
+      <div class="articles-box" style="margin-top: 3rem; background-color: #f3efff; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+        <h3 style="color: #6a4dad; margin-bottom: 1rem;">📚 Top Articles for Today</h3>
+        <ul class="articles-list" style="list-style: none; padding-left: 0;">
+          <li style="margin-bottom: 1.2rem;"><a href="https://thehackernews.com" target="_blank" style="color: #4c3c91; font-weight: bold; text-decoration: none;">5 Steps to Strengthen Your Cyber Hygiene</a><p style="font-size: 0.95rem; color: #555;">Learn key habits to protect your devices and data from everyday threats.</p></li>
+          <li style="margin-bottom: 1.2rem;"><a href="https://techcrunch.com" target="_blank" style="color: #4c3c91; font-weight: bold; text-decoration: none;">AI Meets Automation in Everyday Devices</a><p style="font-size: 0.95rem; color: #555;">How smart tech is being built into the most unexpected places — from fridges to firewalls.</p></li>
+          <li style="margin-bottom: 1.2rem;"><a href="https://wired.com" target="_blank" style="color: #4c3c91; font-weight: bold; text-decoration: none;">The Next Gen of Privacy Tools</a><p style="font-size: 0.95rem; color: #555;">Exploring browsers, networks, and tools designed to protect your digital footprint.</p></li>
+        </ul>
+      </div>
+
+      <!-- Skills Box -->
+      <div class="skills-box" style="margin-top: 2rem; background-color: #eee9f7; padding: 1.5rem; border-radius: 10px;">
+        <h3 style="color: #6a4dad;">🧠 Key Skills</h3>
+        <ul id="skillList" style="list-style: none; padding-left: 0;">
+          <li>✔️ HTML & CSS</li>
+          <li>✔️ Python</li>
+          <li>✔️ Network Troubleshooting</li>
+        </ul>
+        <button onclick="toggleSkills()" style="margin-top: 1rem; padding: 0.5rem 1rem; border: none; background-color: #b29edc; color: white; border-radius: 5px; cursor: pointer;">View More</button>
+      </div>
+
+      <!-- Downloadables Box -->
+      <div class="downloads-box" style="margin-top: 2rem; background-color: #eee9f7; padding: 1.5rem; border-radius: 10px;">
+        <h3 style="color: #6a4dad;">📁 Downloadables</h3>
+        <ul style="list-style: none; padding-left: 0;">
+          <li><a href="assets/resume.pdf" download style="color: #4c3c91; font-weight: bold;">Resume PDF</a></li>
+          <li><a href="#" style="color: #4c3c91; font-weight: bold;">Project Image</a></li>
+          <li><a href="#" style="color: #4c3c91; font-weight: bold;">Case Study Sample</a></li>
+        </ul>
+      </div>
+
+      <!-- References Box -->
+      <div class="references-box" style="margin-top: 2rem; background-color: #eee9f7; padding: 1.5rem; border-radius: 10px;">
+        <h3 style="color: #6a4dad;">💬 References</h3>
+        <blockquote style="font-style: italic; color: #555;">"Marcos is an exceptional learner who thrives on challenges." – Professor L.</blockquote>
+        <blockquote style="font-style: italic; color: #555;">"Reliable, motivated, and always curious. A pleasure to mentor." – Tech Instructor</blockquote>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Marcos. Built with HTML, CSS, and PHP.</p>
+  </footer>
+
+    <button id="scrollTopBtn" title="Go to top">⬆</button>
+  <!-- JavaScript for Navbar, Carousel, and Expand Skills -->
+  
+  <script>
+    // Dark Mode Toggle
+    const themeToggle = document.getElementById("themeToggle");
+        themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode")});
+    // Toggle mobile nav
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  
+    // Carousel logic
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.carousel-button.right');
+    const prevButton = document.querySelector('.carousel-button.left');
+    const container = document.querySelector('.carousel-track-container');
+    let currentSlideIndex = 0;
+  
+    function updateSlidePosition() {
+      const slideWidth = slides[0].getBoundingClientRect().width;
+      track.style.transform = 'translateX(-' + slideWidth * currentSlideIndex + 'px)';
+    }
+
+nextButton.addEventListener('click', () => {
+  container.scrollBy({ left: 300, behavior: 'smooth' }); // adjust 300px for your design
+});
+
+prevButton.addEventListener('click', () => {
+  container.scrollBy({ left: -300, behavior: 'smooth' });
+});
+
+
+  
+    window.addEventListener('resize', updateSlidePosition);
+    window.addEventListener('load', updateSlidePosition);
+  
+    // Scroll-to-top logic
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+  
+    window.onscroll = () => {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+    };
+  
+    scrollTopBtn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  
+    // Toggle More Skills with View Less functionality
+    function toggleSkills() {
+      const skillList = document.getElementById("skillList");
+      const button = document.querySelector(".skills-box button");
+  
+      if (skillList.dataset.expanded !== "true") {
+        const extraSkills = ["JavaScript", "Linux Command Line", "Canva for Tech Presentations", "Troubleshooting Hardware"];
+        extraSkills.forEach(skill => {
+          const li = document.createElement("li");
+          li.classList.add("extra-skill");
+          li.textContent = "✔️ " + skill;
+          skillList.appendChild(li);
+        });
+        skillList.dataset.expanded = "true";
+        button.textContent = "View Less";
+      } else {
+        document.querySelectorAll(".extra-skill").forEach(el => el.remove());
+        skillList.dataset.expanded = "false";
+        button.textContent = "View More";
+      }
+
+    }
+    
+  </script>
+  
+</body>
+</html>
